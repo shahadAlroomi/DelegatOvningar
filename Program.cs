@@ -18,3 +18,10 @@ Action<string> messageWithName = n => Console.WriteLine("Hej "+ n);
 
 messageWithName ("shahad");
 messageWithName("Elin");
+
+//Skapa en Action som tar två heltal som input, adderar dem och skriver ut resultatet. Testa med två olika par av tal.
+
+Action<int,int> add = (x,y) => Console.WriteLine($"{x+y}");
+
+add(10,10);
+add(5,5);
