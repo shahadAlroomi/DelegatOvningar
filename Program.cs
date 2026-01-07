@@ -33,3 +33,11 @@ Console.WriteLine("Resultet är "+ Kvadrat(3));
 
 Func<int,int,int> add1 = (x,y) => x + y ;
 Console.WriteLine("Resultet är "+ add1(3,9));
+
+//Func #3 - Villkor : Skapa en func som returnerar en bool och tar ett heltal som input. Funcen ska returnera true om talet är över 65 och false annars. Funcen kan ses som en definition av ett villkor, i detta fallet om en tenta är godkänd eller inte. Så döp gärna funcen till något som reflekterar detta, t.ex. IsPassed. Testa funcen med olika tal och skriv ut resultatet i konsolen.
+
+Func<int,bool> IsPassed = (age) => age > 65 ;
+
+Console.WriteLine(IsPassed(44));
+
+Console.WriteLine(IsPassed(67));
