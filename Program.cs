@@ -28,3 +28,8 @@ add(5, 5);
 Func<int,int> Kvadrat = y => y * y ;
 
 Console.WriteLine("Resultet är "+ Kvadrat(3));
+
+//Func #2 : Skapa en Func som adderar två tal och returnerar summan. Skriv ut resultatet efter att du kört funcen.
+
+Func<int,int,int> add1 = (x,y) => x + y ;
+Console.WriteLine("Resultet är "+ add1(3,9));
