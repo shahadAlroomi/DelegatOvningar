@@ -1,9 +1,6 @@
-﻿// Skapa en Action som skriver "Hej!" till konsolen och kör den.
-//Action sayHello = ???;
-//sayHello();
+﻿//Action #2 : Skapa en Action som skriver "Hej!" till konsolen och kör den.
 
-
-Action sayHello = PrintWelcomeMessage ;
+Action sayHello = PrintWelcomeMessage;
 
 static void PrintWelcomeMessage()
 {
@@ -12,16 +9,22 @@ static void PrintWelcomeMessage()
 
 sayHello();
 
-//skapa en Action som tar emot ett namn och skriver "Hej, [namn]!" till konsolen. Kör delegaten två gånger med två olika namn.
+//Action #2 :skapa en Action som tar emot ett namn och skriver "Hej, [namn]!" till konsolen. Kör delegaten två gånger med två olika namn.
 
-Action<string> messageWithName = n => Console.WriteLine("Hej "+ n);
+Action<string> messageWithName = n => Console.WriteLine("Hej " + n);
 
-messageWithName ("shahad");
+messageWithName("shahad");
 messageWithName("Elin");
 
-//Skapa en Action som tar två heltal som input, adderar dem och skriver ut resultatet. Testa med två olika par av tal.
+//Action #3 : Skapa en Action som tar två heltal som input, adderar dem och skriver ut resultatet. Testa med två olika par av tal.
 
-Action<int,int> add = (x,y) => Console.WriteLine($"{x+y}");
+Action<int, int> add = (x, y) => Console.WriteLine($"{x + y}");
 
-add(10,10);
-add(5,5);
+add(10, 10);
+add(5, 5);
+
+//Func #1 :Skapa en Func som tar ett heltal och returnerar talet i kvadrat. Hint: tänk på att en Func alltid returnerar ett värde, och det är den första typen i generics-listan.
+
+Func<int,int> Kvadrat = y => y * y ;
+
+Console.WriteLine("Resultet är "+ Kvadrat(3));
